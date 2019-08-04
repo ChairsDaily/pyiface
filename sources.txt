@@ -1,6 +1,0 @@
-https://www.ibm.com/support/knowledgecenter/en/ssw_aix_71/communicationtechref/ioctl_socket_control_operations.html
-https://github.com/bat-serjo/PyIface/blob/master/pyiface/ifreqioctls.py
-https://docs.python.org/2/library/fcntl.html
-https://www.winsocketdotnetworkprogramming.com/winsock2programming/winsock2advancedsocketoptionioctl7b.html
-https://gist.github.com/pklaus/289646
-
