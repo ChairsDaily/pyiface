@@ -3,7 +3,7 @@
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
-version=$(python -c 'import eziface; eziface.version()')
+version=$(python -c 'import pyiface; pyiface.version()')
 
 echo "Deploying version $version"
 
