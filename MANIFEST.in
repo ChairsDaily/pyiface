@@ -1,0 +1,4 @@
+include LICENSE README.md .gitignore
+include *.py *.txt *.rst *.md
+recursive-include eziface/ *.py *.txt
+recursive-include docs/ tests/ tools/
