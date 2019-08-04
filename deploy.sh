@@ -11,8 +11,10 @@ echo "Deploying version $version"
 git tag -s -m "Version $version" v$version
 python2 setup.py sdist
 
+git add .
+git commit -a
+
 git push origin master # only push master branch
-git push --tags origin
 
 rm -rf build/ dist/
 

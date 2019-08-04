@@ -1,4 +1,4 @@
-include LICENSE README.md .gitignore setup.py .travis.yml deploy.sh
+include LICENSE README.md .gitignore setup.py .travis.yml deploy.sh sources.txt
 recursive-include pyiface/ *.py *.txt
 recursive-include docs/ *.rst *.md 
 recursive-include tests/ *.py *.txt 
