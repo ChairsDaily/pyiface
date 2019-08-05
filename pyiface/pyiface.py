@@ -8,6 +8,7 @@
 # You may obtain a copy of the License at
 #
 #	http://www.apache.org/licenses/LICENSE-2.0
+#	(A copy should also be included with this source distribution)
 #
 # Unless required by applicable law or agreed to in writing,
 # software distributed under the License is done "AS IS",
@@ -19,22 +20,19 @@
 
 
 """
-Project iffctl
-~~~~~~~~~~~~~~
+Project pyiface
+~~~~~~~~~~~~~~~
 SUPER EASY Python2 API for Low-level wireless hardware system calls,
 giving POSIX userland programs easier access to external
 wireless network interfaces (i.e. Alfa cards).
 """
 
 __author__ = 'Kaleb Roscoo Horvath'
-__version__ = '1.0.beta'
+__version__ = '1.1.beta'
 __license__ = 'Apache-2.0'
 
-__all__ = [	# see docstring for params, returns, and error handling
-	'list_ifaces', 'hardware_address', 'broadcast_baddress', 'netmask',
-	'inet_address', 'set_inet_address', 'set_netmask', 'break_iface'
-	'up', 'down', 'raise', 'lower', 'list_flags', 'tx_info', 'rx_info'
-	]
+
+__all__ = []
 
 # standard library dependencies
 try:
