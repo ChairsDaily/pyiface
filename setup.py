@@ -18,24 +18,15 @@
 #
 # Violators of the License will be prosecuted following severe offences.
 
-r"""PyIface - Easy API for low-level wireless hardware system calls.
 
-This package exports the following modules and subpackages:
-	Interface - the public bound object that binds together all private API methods.
+from distutils.core import setup
+import pyiface
 
-Since version 1.2.beta, PyIface implements the Interface object. Older applicants
-of PyIface are HIGHLY ENCOURAGED to migrate.
-"""
+setup(name='PyIface', version=pyiface.__version__,
+	description='Easy API for low-level wireless hardware system calls.',
 
-
-__author__ = 'Kaleb Roscoo Horvath'
-__version__ = '1.2 beta'
-__license__ = 'Apache-2.0'
-
-__all__ = ['Iface'] # only public object/method available
-
-
-
-
+	author=pyiface.__author__, author_email='bobafett2021@hotmail.com',
+	license='Apache-2.0', url='https://github.com/PyDever/PyIface',
+	packages=['pyiface'])
 
 

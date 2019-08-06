@@ -19,21 +19,6 @@
 # Violators of the License will be prosecuted following severe offences.
 
 
-"""
-Project pyiface
-~~~~~~~~~~~~~~~
-SUPER EASY Python2 API for Low-level wireless hardware system calls,
-giving POSIX userland programs easier access to external
-wireless network interfaces (i.e. Alfa cards).
-"""
-
-__author__ = 'Kaleb Roscoo Horvath'
-__version__ = '1.1.beta'
-__license__ = 'Apache-2.0'
-
-
-__all__ = []
-
 # standard library dependencies
 try:
 	import fcntl, struct, array
