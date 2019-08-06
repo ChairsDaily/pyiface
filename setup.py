@@ -26,7 +26,7 @@ setup(name='PyIface', version=pyiface.__version__,
 	description='Easy API for low-level wireless hardware system calls.',
 
 	author=pyiface.__author__, author_email='bobafett2021@hotmail.com',
-	license='Apache-2.0', url='https://github.com/PyDever/PyIface',
+	license=pyiface.__license__, url='https://github.com/PyDever/PyIface',
 	packages=['pyiface'])
 
 
