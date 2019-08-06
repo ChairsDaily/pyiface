@@ -1,6 +1,0 @@
-include LICENSE README.md .gitignore setup.py .travis.yml deploy.sh
-recursive-include pyiface/ *.py *.txt
-recursive-include docs/ *.rst *.md 
-recursive-include tests/ *.py *.txt 
-recursive-include tools/ *.py *.sh *.txt
-
