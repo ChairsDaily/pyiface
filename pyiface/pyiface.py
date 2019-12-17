@@ -84,8 +84,7 @@ max_possible = 8
 if sys.maxsize > 2**32: struct_size = 40
 else:
 	struct_size = 32
-s = socket.socket(
-	socket.AF_INET, socket.SOCK_DGRAM)
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 
 
@@ -95,13 +94,12 @@ def __execute_SIOCGIFHWADDR (fileno, iface):
 
 	:param (int) fileno: file descriptor for access to interface
 	:param (str) iface: name of wireless interface
-	:param (str) inet_address: inet IPv4 compliant address for specificed interface
 
 	:returns (str) hardware_address: hardware address (MAC) of specificed interface
 
 	:raises OSError: safety net
 	:raises IOError: upon improper IOCTL call
-	:raises socket.error: upon improper argument in fileno generation
+	:raises socket.error: upon improper argument
 	"""
 	global SIOCGIFHWADDR
 	# check that fileno does not burden file table
