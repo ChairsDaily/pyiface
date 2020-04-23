@@ -76,17 +76,12 @@ if __verify_POSIX_compliant():
 # ioctl command codes, borrowed from: github.com/bat-serjo/PyIface
 SIOCGIFCONF = 0x8912
 SIOCGIFHWADDR = 0x8927
-
-# more go here
 max_possible = 8
-
 # determine size of arg (struct) for ioctl system call
 if sys.maxsize > 2**32: struct_size = 40
 else:
 	struct_size = 32
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-
-
 
 def __execute_SIOCGIFHWADDR (fileno, iface):
 	"""Execute IOCTL call to get hardware address of specificed interface
@@ -96,10 +91,6 @@ def __execute_SIOCGIFHWADDR (fileno, iface):
 	:param (str) iface: name of wireless interface
 
 	:returns (str) hardware_address: hardware address (MAC) of specificed interface
-
-	:raises OSError: safety net
-	:raises IOError: upon improper IOCTL call
-	:raises socket.error: upon improper argument
 	"""
 	global SIOCGIFHWADDR
 	# check that fileno does not burden file table
